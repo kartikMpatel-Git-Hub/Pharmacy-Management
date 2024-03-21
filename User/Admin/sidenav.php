@@ -46,16 +46,17 @@
   <div class="card">
     <div class="card-body">
       <div class="logo">
-        <img src="images/prof.jpg" class="profile"/>
+        <img src="image/prof.jpg" class="profile"/>
         <?php 
-          $User = $_SESSION['user'];
+            require "session.php";
+            $User = $_SESSION['user'];
         ?>
         <h1 class="logo-caption"><?php echo $User;?></h1>
       </div> <!-- logo class -->
 
       <!-- dashboard start -->
       <div class="main-menu-item">
-        <a href="../index.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+        <a href="index.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
       </div>
       <!-- dashboard end -->
 
@@ -68,7 +69,7 @@
       		</span>
       	</a>
       	<ul class="treeview-menu" style="display: none;">
-      		<li class="treeview"><a href="Functionality/new_invoice.php">New Invoice</a></li>
+      		<li class="treeview"><a href="new_invoice.php">New Invoice</a></li>
       		<li class="treeview"><a href="manage_invoice.php">Manage Invoice </a></li>
       	</ul>
       </div>
@@ -83,8 +84,8 @@
       		</span>
       	</a>
       	<ul class="treeview-menu" style="display: none;">
-      		<li class="treeview"><a href="Functionality/add_customer.php">Add Customer</a></li>
-      		<li class="treeview"><a href="Functionality/manage_customer.php">Manage Customer</a></li>
+      		<li class="treeview"><a href="add_customer.php">Add Customer</a></li>
+      		<li class="treeview"><a href="manage_customer.php">Manage Customer</a></li>
       	</ul>
       </div>
       <!-- customer end -->
@@ -98,9 +99,9 @@
       		</span>
       	</a>
       	<ul class="treeview-menu" style="display: none;">
-      		<li class="treeview"><a href="Functionality/add_medicine.php">Add Medicine</a></li>
-      		<li class="treeview"><a href="Functionality/manage_medicine.php">Manage Medicine</a></li>
-          <li class="treeview"><a href="Functionality/manage_medicine_stock.php">Manage Medicine Stock</a></li>
+      		<li class="treeview"><a href="add_medicine.php">Add Medicine</a></li>
+      		<li class="treeview"><a href="manage_medicine.php">Manage Medicine</a></li>
+          <li class="treeview"><a href="manage_medicine_stock.php">Manage Medicine Stock</a></li>
       	</ul>
       </div>
       <!-- medicine end -->
@@ -114,8 +115,8 @@
       		</span>
       	</a>
       	<ul class="treeview-menu" style="display: none;">
-      		<li class="treeview"><a href="Functionality/add_supplier.php">Add Supplier</a></li>
-      		<li class="treeview"><a href="Functionality/manage_supplier.php">Manage Supplier</a></li>
+      		<li class="treeview"><a href="add_supplier.php">Add Supplier</a></li>
+      		<li class="treeview"><a href="manage_supplier.php">Manage Supplier</a></li>
       	</ul>
       </div>
       <!-- manufacturer end -->
@@ -129,8 +130,8 @@
       		</span>
       	</a>
       	<ul class="treeview-menu" style="display: none;">
-      		<li class="treeview"><a href="Functionality/add_purchase.php">Add Purchase</a></li>
-      		<li class="treeview"><a href="Functionality/manage_purchase.php">Manage Purchase</a></li>
+      		<li class="treeview"><a href="add_purchase.php">Add Purchase</a></li>
+      		<li class="treeview"><a href="manage_purchase.php">Manage Purchase</a></li>
       	</ul>
       </div>
       <!-- purchase end -->
@@ -144,8 +145,8 @@
       		</span>
       	</a>
       	<ul class="treeview-menu" style="display: none;">
-          <li class="treeview"><a href="Functionality/sales_report.php">Sales Report</a></li>
-      		<li class="treeview"><a href="Functionality/purchase_report.php">Purchase Report</a></li>
+          <li class="treeview"><a href="sales_report.php">Sales Report</a></li>
+      		<li class="treeview"><a href="purchase_report.php">Purchase Report</a></li>
       	</ul>
       </div>
       <!-- report end -->
@@ -159,11 +160,11 @@
       		</span>
       	</a>
       	<ul class="treeview-menu" style="display: none;">
-          <li class="treeview"><a href="Functionality/manage_invoice.php">Invoice</a></li>
-          <li class="treeview"><a href="Functionality/manage_customer.php">Customer</a></li>
-      		<li class="treeview"><a href="Functionality/manage_medicine.php">Medicine</a></li>
-          <li class="treeview"><a href="Functionality/manage_supplier.php">Supplier</a></li>
-      		<li class="treeview"><a href="Functionality/manage_purchase.php">Purchase</a></li>
+          <li class="treeview"><a href="manage_invoice.php">Invoice</a></li>
+          <li class="treeview"><a href="manage_customer.php">Customer</a></li>
+      		<li class="treeview"><a href="manage_medicine.php">Medicine</a></li>
+          <li class="treeview"><a href="manage_supplier.php">Supplier</a></li>
+      		<li class="treeview"><a href="manage_purchase.php">Purchase</a></li>
       	</ul>
       </div>
       <!-- search end -->

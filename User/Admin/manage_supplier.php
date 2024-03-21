@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Manage Supplier</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<script src="bootstrap/js/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+		<script src="../../bootstrap/js/jquery.min.js"></script>
+		<script src="../../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/sidenav.css">
-    <link rel="stylesheet" href="css/home.css">
-    <script src="js/manage_supplier.js"></script>
-    <script src="js/validateForm.js"></script>
-    <script src="js/restrict.js"></script>
+    <link rel="stylesheet" href="../../css/sidenav.css">
+    <link rel="stylesheet" href="../../css/home.css">
+    <script src="../../js/manage_supplier.js"></script>
+    <script src="../../js/validateForm.js"></script>
+    <script src="../../js/restrict.js"></script>
   </head>
   <body>
     <!-- including side navigations -->
-    <?php include("sections/sidenav.html"); ?>
+    <?php include("sidenav.php"); ?>
 
     <div class="container-fluid">
       <div class="container">
 
         <!-- header section -->
         <?php
-          require "php/header.php";
+          require "../../php/header.php";
           createHeader('group', 'Manage Supplier', 'Manage Existing Supplier');
         ?>
         <!-- header section end -->
@@ -57,7 +57,7 @@
             		</thead>
                 <tbody id="suppliers_div">
                   <?php
-                    require 'php/manage_supplier.php';
+                    require '../../php/manage_supplier.php';
                     showSuppliers(0);
                   ?>
             		</tbody>
